@@ -17,3 +17,13 @@
     --light-green: #26C2AE;
     --white: #FFFFFF;
 }
+
+body {
+    background-color: var(--green-200);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-block: 2.8rem;
+}
