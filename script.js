@@ -54,12 +54,9 @@ function receberPorcentagem(evento) {
 
     })
 
-    if(evento.target.value !== "") {
-        porcetagem = parseFloat(evento.target.value) / 100
-    } else {
-            porcetagem = 0
-    }
-        calcular()
+    porcentagem = parseFloat(evento.target.value) / 100 || 0
+
+    calcular()
 
 }   
 
@@ -103,5 +100,9 @@ function limpar() {
 
     document.querySelector(".gorjeta-total > strong").innerHTML = "R$ 0.00"
     document.querySelector(".total > strong").innerHTML = "R$ 0.00"
+
+    conta = 0
+    porcetagem = 0
+    pessoas = 0
 
 }
